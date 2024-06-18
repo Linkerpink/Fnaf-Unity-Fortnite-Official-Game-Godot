@@ -11,13 +11,13 @@ public class Cam : MonoBehaviour
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;   
+        //Cursor.lockState = CursorLockMode.Locked;   
     }
 
     private void Update()
     {
         y = Input.GetAxis("Mouse X");
-        //x = Input.GetAxis("Mouse Y");
+        x = Input.GetAxis("Mouse Y");
         rotate = new Vector3(x, y * sensitivity, 0);
         transform.eulerAngles = transform.eulerAngles - rotate;
     }

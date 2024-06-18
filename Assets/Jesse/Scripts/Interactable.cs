@@ -11,9 +11,12 @@ public class Interactable : MonoBehaviour
 
     public UnityEvent onInteraction;
 
+    public DoorSystem ja;
+
     // Start is called before the first frame update
     void Start()
     {
+        ja = GetComponent<DoorSystem>();
         outline = GetComponent<Outline>();
         DisableOutLine();
     }
@@ -21,6 +24,7 @@ public class Interactable : MonoBehaviour
     public void Interact()
     {
         onInteraction.Invoke();
+        ja.OpenDoor();
     }
 
     public void DisableOutLine()

@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Playerinteraction : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour
 {
-    public float playerReach = 3f;
-    Interactable currentInteractable;
+    public Interactable currentInteractable;
 
     // Update is called once per frame
     void Update()
     {
         CheckInteraction();
-        if(Input.GetKeyDown(KeyCode.Mouse0) && currentInteractable != null)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             currentInteractable.Interact();
         }
@@ -20,21 +20,29 @@ public class Playerinteraction : MonoBehaviour
     void CheckInteraction()
     {
         RaycastHit hit;
-        Ray ray;
-
-        if(Physics.Raycast(ray, out hit, playerReach)) 
+        if (Camera.main != null)
         {
-            if(hit.collider.tag == "Interactable")
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit))
             {
                 Interactable newInteractable = hit.collider.GetComponent<Interactable>();
 
-                if(currentInteractable && newInteractable != currentInteractable)
+                if (newInteractable != null && hit.collider.CompareTag("Interactable"))
                 {
-                    currentInteractable.DisableOutLine();
-                }
-                if (newInteractable.enabled)
-                {
-                    SetNewCurrentInteractable(newInteractable);
+                    if (currentInteractable != null && newInteractable != currentInteractable)
+                    {
+                        currentInteractable.DisableOutLine();
+                    }
+
+                    if (newInteractable.enabled)
+                    {
+                        SetNewCurrentInteractable(newInteractable);
+                    }
+                    else
+                    {
+                        DisableCurrentInteractable();
+                    }
                 }
                 else
                 {
@@ -46,10 +54,6 @@ public class Playerinteraction : MonoBehaviour
                 DisableCurrentInteractable();
             }
         }
-        else
-        {
-            DisableCurrentInteractable();
-        }
     }
 
     void SetNewCurrentInteractable(Interactable newInteractable)
@@ -60,7 +64,7 @@ public class Playerinteraction : MonoBehaviour
 
     void DisableCurrentInteractable()
     {
-        if (currentInteractable)
+        if (currentInteractable != null)
         {
             currentInteractable.DisableOutLine();
             currentInteractable = null;

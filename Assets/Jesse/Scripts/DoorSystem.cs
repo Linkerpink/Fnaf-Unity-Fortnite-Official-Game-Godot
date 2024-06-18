@@ -35,12 +35,12 @@ public class DoorSystem : MonoBehaviour
         }
     }
 
-    private void OpenDoor()
+    public void OpenDoor()
     {
         animator.SetTrigger("Door open");
     }
 
-    private void CloseDoor()
+    public void CloseDoor()
     {
         animator.SetTrigger("Door close");
     }
