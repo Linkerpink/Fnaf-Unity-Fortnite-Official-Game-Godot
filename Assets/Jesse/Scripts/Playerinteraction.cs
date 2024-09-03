@@ -7,7 +7,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     public Interactable currentInteractable;
 
-    // Update is called once per frame
+    
     void Update()
     {
         CheckInteraction();
