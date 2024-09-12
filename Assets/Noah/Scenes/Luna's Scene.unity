@@ -208,8 +208,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1992610157}
         m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
-        m_MethodName: ChangeCam1A
-        m_Mode: 1
+        m_MethodName: ChangeCamera
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -675,78 +675,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &579135084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 579135085}
-  - component: {fileID: 579135087}
-  - component: {fileID: 579135086}
-  m_Layer: 5
-  m_Name: Cam1B
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &579135085
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579135084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 596323792}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &579135086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579135084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 8400000, guid: f2a971daddffcdc4e98465077d5b0fba, type: 2}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &579135087
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579135084}
-  m_CullTransparentMesh: 1
 --- !u!1 &596323791
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +704,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 983466778}
-  - {fileID: 579135085}
   m_Father: {fileID: 732081589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1222,7 +1149,7 @@ GameObject:
   - component: {fileID: 983466780}
   - component: {fileID: 983466779}
   m_Layer: 5
-  m_Name: Cam1A
+  m_Name: Raw Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1655,12 +1582,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1992610157}
         m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
-        m_MethodName: ChangeCam1B
-        m_Mode: 1
+        m_MethodName: ChangeCamera
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2268,8 +2195,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camMonitorButton: {fileID: 1534316139}
   cameraSystem: {fileID: 732081588}
-  cam1ART: {fileID: 983466777}
-  cam1BRT: {fileID: 579135084}
+  rawImage: {fileID: 983466779}
+  cameraArray:
+  - {fileID: 8400000, guid: 5f5ef60ff9230124d908c1d3caf9b485, type: 2}
+  - {fileID: 8400000, guid: f2a971daddffcdc4e98465077d5b0fba, type: 2}
 --- !u!1 &2004603836
 GameObject:
   m_ObjectHideFlags: 0
