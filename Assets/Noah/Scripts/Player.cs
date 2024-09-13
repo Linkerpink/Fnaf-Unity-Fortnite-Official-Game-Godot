@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     //public float camSensitivity = 100f;
     //private float originalCamSensitivity;
 
-    private float minLook = -90f;
-    private float maxLook = 90f;
+    [SerializeField] private float minLook = -90f;
+    [SerializeField] private float maxLook = 90f;
     private float look = 0f;
  
     public float camSpeed = 0.01f;
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
 
         if (state == CamStates.Left)
         {
-            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, Quaternion.Euler(0f, -90f, 0f), camSpeed * Time.deltaTime);
+            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, Quaternion.Euler(0f, minLook, 0f), camSpeed * Time.deltaTime);
         }
         else if (state == CamStates.Neutral)
         {
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
         }
         else if (state == CamStates.Right)
         {
-            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, Quaternion.Euler(0f, 90f, 0f), camSpeed * Time.deltaTime);
+            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, Quaternion.Euler(0f, maxLook, 0f), camSpeed * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
