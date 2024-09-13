@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Mainmenuarrows : MonoBehaviour
@@ -25,5 +26,15 @@ public class Mainmenuarrows : MonoBehaviour
     public void OnButtonExit()
     {
         _textMeshPro.enabled = false;
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene("Main Scene");
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene("Main Scene");
     }
 }
