@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7704643715223798375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5640788848940004414}
+  - component: {fileID: 7191418064933926340}
+  m_Layer: 0
+  m_Name: Camera Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5640788848940004414
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704643715223798375}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 291.11896, y: 178.42928, z: -36.42712}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7191418064933926340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704643715223798375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f10eb700c8e78448d6a672e9fc1dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camMonitorButton: {fileID: 0}
+  cameraSystem: {fileID: 0}
+  rawImage: {fileID: 0}
+  cameraArray:
+  - {fileID: 8400000, guid: 5f5ef60ff9230124d908c1d3caf9b485, type: 2}
+  - {fileID: 8400000, guid: f2a971daddffcdc4e98465077d5b0fba, type: 2}
+  - {fileID: 8400000, guid: dd2fcd69693e1334fa76530973737c04, type: 2}
+  - {fileID: 8400000, guid: ed6242917024e4d4784a28e4014d0a94, type: 2}
+  - {fileID: 8400000, guid: 7e83680985f85ea42bdee2dc6c944e8d, type: 2}
+  - {fileID: 8400000, guid: 3c253f809b24dca4dba05682380ebc0a, type: 2}
+  - {fileID: 8400000, guid: 32f3a24545309cd40b86c20590a27643, type: 2}
+  - {fileID: 8400000, guid: 9d73bc089cb9db645a5269b0bf42cee2, type: 2}
+  - {fileID: 8400000, guid: dc05d5d1d6cbbd94888d213eac63f7ea, type: 2}
+  - {fileID: 8400000, guid: f032c6471d4a0b54e88e7c15a3ce0ecf, type: 2}
+  - {fileID: 8400000, guid: 41382fdd38ee7a34b8a29024f6711168, type: 2}
