@@ -4054,8 +4054,11 @@ MonoBehaviour:
   cameraArray:
   - {fileID: 8400000, guid: 5f5ef60ff9230124d908c1d3caf9b485, type: 2}
   - {fileID: 8400000, guid: f2a971daddffcdc4e98465077d5b0fba, type: 2}
-  - {fileID: 8400000, guid: 74d2684abeb94e54595283c71ac979c4, type: 2}
-  - {fileID: 8400000, guid: bb9353b268cbf4e4289053b0a69c1115, type: 2}
+  - {fileID: 8400000, guid: dd2fcd69693e1334fa76530973737c04, type: 2}
+  - {fileID: 8400000, guid: ed6242917024e4d4784a28e4014d0a94, type: 2}
+  - {fileID: 8400000, guid: 7e83680985f85ea42bdee2dc6c944e8d, type: 2}
+  - {fileID: 8400000, guid: 3c253f809b24dca4dba05682380ebc0a, type: 2}
+  - {fileID: 8400000, guid: 32f3a24545309cd40b86c20590a27643, type: 2}
 --- !u!1 &2004603836
 GameObject:
   m_ObjectHideFlags: 0
