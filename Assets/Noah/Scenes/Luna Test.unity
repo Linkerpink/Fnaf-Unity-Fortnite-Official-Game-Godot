@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 44415519}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000024957035, y: 0.7071068, z: -0.70710677, w: -0.00000025898436}
-  m_LocalPosition: {x: 0, y: 0, z: 3.75}
+  m_LocalPosition: {x: 0, y: -0.17, z: 3.75}
   m_LocalScale: {x: 0.44781628, y: 0.2929, z: 0.2929}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2663,6 +2663,11 @@ PrefabInstance:
       objectReference: {fileID: 983466779}
     - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
         type: 3}
+      propertyPath: allCameras
+      value: 
+      objectReference: {fileID: 615347881}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
       propertyPath: cameraSystem
       value: 
       objectReference: {fileID: 732081588}
@@ -2671,6 +2676,66 @@ PrefabInstance:
       propertyPath: camMonitorButton
       value: 
       objectReference: {fileID: 1534316139}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[0]
+      value: 
+      objectReference: {fileID: 474438447}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[1]
+      value: 
+      objectReference: {fileID: 1146488052}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[2]
+      value: 
+      objectReference: {fileID: 184857142}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[3]
+      value: 
+      objectReference: {fileID: 997196758}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[4]
+      value: 
+      objectReference: {fileID: 1452005673}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[5]
+      value: 
+      objectReference: {fileID: 1688132747}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[6]
+      value: 
+      objectReference: {fileID: 2018374577}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[7]
+      value: 
+      objectReference: {fileID: 322692086}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[8]
+      value: 
+      objectReference: {fileID: 293302550}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[9]
+      value: 
+      objectReference: {fileID: 1670982864}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
+      propertyPath: allCameras.Array.data[10]
+      value: 
+      objectReference: {fileID: 269623837}
     - target: {fileID: 7704643715223798375, guid: 8a821165023dba04999a11c7bbf85fb6,
         type: 3}
       propertyPath: m_Name

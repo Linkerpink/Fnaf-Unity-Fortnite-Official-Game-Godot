@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class CameraManager : MonoBehaviour
 {
@@ -10,11 +11,21 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField] private Button camMonitorButton;
     [SerializeField] private GameObject cameraSystem;
+    [SerializeField] private GameObject[] allCameras;
 
     //Camera Render Textures
     [SerializeField] private RawImage rawImage;
     [SerializeField] private RenderTexture[] cameraArray;
-    
+
+    private void Start()
+    {
+        for (int i = 0; i < allCameras.Length; i++)
+        {
+            allCameras[i].SetActive(false);
+        }
+
+        allCameras[0].SetActive(true);
+    }
 
     private void Update()
     {
@@ -40,6 +51,12 @@ public class CameraManager : MonoBehaviour
 
     public void ChangeCamera(int cam)
     {
+        for (int i = 0; i < allCameras.Length; i++) 
+        {
+            allCameras[i].SetActive(false); 
+        }
+
+        allCameras[cam].SetActive(true);
         rawImage.texture = cameraArray[cam];
     }
 }
