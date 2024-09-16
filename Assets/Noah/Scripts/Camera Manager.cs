@@ -17,6 +17,13 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private RawImage rawImage;
     [SerializeField] private RenderTexture[] cameraArray;
 
+    private Animator camChangeStaticAnimator;
+
+    private void Awake()
+    {
+        camChangeStaticAnimator = GameObject.Find("Cam Change Static").GetComponent<Animator>();
+    }
+
     private void Start()
     {
         for (int i = 0; i < allCameras.Length; i++)
@@ -51,6 +58,8 @@ public class CameraManager : MonoBehaviour
 
     public void ChangeCamera(int cam)
     {
+        camChangeStaticAnimator.SetTrigger("ChangeCam");
+
         for (int i = 0; i < allCameras.Length; i++) 
         {
             allCameras[i].SetActive(false); 
