@@ -5,9 +5,18 @@ using UnityEngine;
 public class LightController : MonoBehaviour
 {
     [SerializeField] private Door Door;
+    private CameraManager cameraManager;
+
+    private void Awake()
+    {
+        cameraManager = GameObject.Find("Camera Manager").GetComponent<CameraManager>();
+    }
 
     private void OnMouseDown()
     {
-        Door.ChangeLights();
+        if (!cameraManager.enableCameras)
+        {
+            Door.ChangeLights();
+        }
     }
 }

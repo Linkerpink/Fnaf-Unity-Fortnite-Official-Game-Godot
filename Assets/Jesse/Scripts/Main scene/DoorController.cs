@@ -5,9 +5,18 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     [SerializeField] private Door Door;
+    private CameraManager cameraManager;
+
+    private void Awake()
+    {
+        cameraManager = GameObject.Find("Camera Manager").GetComponent<CameraManager>();
+    }
 
     private void OnMouseDown()
     {
-        Door.isOpen = !Door.isOpen;
+        if (!cameraManager.enableCameras)
+        {
+            Door.isOpen = !Door.isOpen;
+        }
     }
 }

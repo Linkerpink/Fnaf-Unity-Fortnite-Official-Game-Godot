@@ -6,8 +6,7 @@ using TMPro;
 
 public class CameraManager : MonoBehaviour
 {
-    private bool enableCameras = false;
-    private bool canEnableCameras = true;
+    public bool enableCameras = false;
 
     [SerializeField] private Button camMonitorButton;
     [SerializeField] private GameObject cameraSystem;

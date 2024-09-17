@@ -6,35 +6,40 @@ public class Camscripts : MonoBehaviour
 {
     public Transform playerCam;
     public float rotateSpeed;
-    public int clampValue;
+    public float clampValue;
 
     public bool movingLeft;
     public bool movingRight;
 
+    private CameraManager cameraManager;
+    private float currentYRotation = 0f;
+
+    private void Awake()
+    {
+        cameraManager = GameObject.Find("Camera Manager").GetComponent<CameraManager>();
+    }
+
     private void Update()
     {
-        if(movingLeft == true) 
+        if (!cameraManager.enableCameras)
         {
-            if(playerCam.localRotation == Quaternion.Euler(0, -clampValue, 0))
-            {
+            float rotationInput = 0f;
 
-            }
-            else
+            if (movingLeft)
             {
-                playerCam.Rotate(0, -rotateSpeed, 0);
+                rotationInput = -rotateSpeed * Time.deltaTime;
             }
-        }
 
-        if(movingRight == true)
-        {
-            if(playerCam.localRotation == Quaternion.Euler(0, clampValue, 0))
+            if (movingRight)
             {
+                rotationInput = rotateSpeed * Time.deltaTime;
+            }
 
-            }
-            else
-            {
-                playerCam.Rotate(0, rotateSpeed, 0);
-            }
+            currentYRotation += rotationInput;
+
+            currentYRotation = Mathf.Clamp(currentYRotation, -clampValue, clampValue);
+
+            playerCam.localRotation = Quaternion.Euler(0, currentYRotation, 0);
         }
     }
 

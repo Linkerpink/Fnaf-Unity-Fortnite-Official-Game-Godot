@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5228340413006485064}
-  - component: {fileID: 6796628812149042720}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -33,20 +32,6 @@ Transform:
   - {fileID: 4964716354193902010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6796628812149042720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836209649049379209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13b0f08e289205545b38d06fc5027a97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 5453168322478975576}
-  camSensitivity: 200
 --- !u!1 &6889205535003445885
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +44,7 @@ GameObject:
   - component: {fileID: 5453168322478975576}
   - component: {fileID: 931978693776381073}
   - component: {fileID: 257263321962649312}
+  - component: {fileID: 7461249646386849964}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -117,7 +103,7 @@ Camera:
   field of view: 69
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 100
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -184,3 +170,20 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &7461249646386849964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889205535003445885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c15999a1a990024fbf6d223373f1bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamLook: {fileID: 0}
+  rotateSpeed: 0.5
+  clampValue: 30
+  movingLeft: 0
+  movingRight: 0
