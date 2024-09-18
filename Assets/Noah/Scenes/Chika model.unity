@@ -185,6 +185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bonnie Model
       objectReference: {fileID: 0}
+    - target: {fileID: 7982901470428654247, guid: 5f3f96042e61375469da8a12be6181ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -208,7 +213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &382608444
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -519,6 +524,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chica Model
       objectReference: {fileID: 0}
+    - target: {fileID: 3864319934192113680, guid: d59c2e47de31b854f873e202f1ed9040,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5703494417987350876, guid: d59c2e47de31b854f873e202f1ed9040,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -585,17 +595,17 @@ PrefabInstance:
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7923
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9054883
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.8340645
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}

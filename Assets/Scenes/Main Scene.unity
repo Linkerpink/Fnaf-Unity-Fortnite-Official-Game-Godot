@@ -499,6 +499,11 @@ PrefabInstance:
       objectReference: {fileID: 452365901}
     - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
         type: 3}
+      propertyPath: camMonitor
+      value: 
+      objectReference: {fileID: 566566416}
+    - target: {fileID: 7191418064933926340, guid: 8a821165023dba04999a11c7bbf85fb6,
+        type: 3}
       propertyPath: cameraSystem
       value: 
       objectReference: {fileID: 1084583251}
@@ -695,6 +700,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 590892667}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &566566416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2894536310122413150, guid: d5a3ad0f4944376468ddf295452f72f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1062356047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &582469649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4148795347681255948, guid: 0c22d6b354e25b8469c64d155b8788bf,
@@ -1575,6 +1586,21 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeEnableCameras
       objectReference: {fileID: 0}
+    - target: {fileID: 5320090382767173388, guid: d5a3ad0f4944376468ddf295452f72f9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5320090382767173388, guid: d5a3ad0f4944376468ddf295452f72f9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5320090382767173388, guid: d5a3ad0f4944376468ddf295452f72f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5448413570059694613, guid: d5a3ad0f4944376468ddf295452f72f9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1684,7 +1710,7 @@ PrefabInstance:
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.2894363
+      value: 6.289436
       objectReference: {fileID: 0}
     - target: {fileID: 8714077071488124254, guid: 5d4f83102ed49e44c8cb5e062da135e3,
         type: 3}
