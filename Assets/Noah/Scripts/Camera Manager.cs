@@ -21,6 +21,8 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private GameObject camMonitor;
     [SerializeField] private float camMonitorAnimationSpeed = 0.05f;
 
+    private int currentCam;
+
     private void Awake()
     {
         camChangeStaticAnimator = GameObject.Find("Cam Change Static").GetComponent<Animator>();
@@ -28,6 +30,8 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
+        currentCam = 0;
+
         for (int i = 0; i < allCameras.Length; i++)
         {
             allCameras[i].SetActive(false);
@@ -74,6 +78,10 @@ public class CameraManager : MonoBehaviour
 
     public void ChangeCamera(int cam)
     {
+        currentCam = cam;
+
+        Button button = GetComponent<Button>();
+        
         camChangeStaticAnimator.SetTrigger("ChangeCam");
 
         for (int i = 0; i < allCameras.Length; i++) 
