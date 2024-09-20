@@ -1196,6 +1196,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &704262334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704262335}
+  m_Layer: 0
+  m_Name: Cam_1C_Foxy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704262335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704262334}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2094431191}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707817068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2487209984360903, guid: 0c22d6b354e25b8469c64d155b8788bf,
@@ -1512,12 +1543,12 @@ PrefabInstance:
     - target: {fileID: 2507954412974469463, guid: e63e4299bd7918c4db5dee597a101a8a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -40.320366
+      value: -40.3
       objectReference: {fileID: 0}
     - target: {fileID: 2507954412974469463, guid: e63e4299bd7918c4db5dee597a101a8a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.039464
+      value: 2.04
       objectReference: {fileID: 0}
     - target: {fileID: 2507954412974469463, guid: e63e4299bd7918c4db5dee597a101a8a,
         type: 3}
@@ -2803,6 +2834,7 @@ Transform:
   - {fileID: 1436629739}
   - {fileID: 421604850}
   - {fileID: 1048859767}
+  - {fileID: 704262335}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146643880
@@ -3176,9 +3208,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7087551888792603731, guid: 7a7f4ff5639a6eb4b8d259c00b35c9f9,
         type: 3}
+      propertyPath: cam_1c_foxy
+      value: 
+      objectReference: {fileID: 704262335}
+    - target: {fileID: 7087551888792603731, guid: 7a7f4ff5639a6eb4b8d259c00b35c9f9,
+        type: 3}
+      propertyPath: cam_1a_chica
+      value: 
+      objectReference: {fileID: 421604850}
+    - target: {fileID: 7087551888792603731, guid: 7a7f4ff5639a6eb4b8d259c00b35c9f9,
+        type: 3}
       propertyPath: pointManager
       value: 
       objectReference: {fileID: 2094431190}
+    - target: {fileID: 7087551888792603731, guid: 7a7f4ff5639a6eb4b8d259c00b35c9f9,
+        type: 3}
+      propertyPath: cam_1a_bonnie
+      value: 
+      objectReference: {fileID: 1048859767}
+    - target: {fileID: 7087551888792603731, guid: 7a7f4ff5639a6eb4b8d259c00b35c9f9,
+        type: 3}
+      propertyPath: cam_1a_freddy
+      value: 
+      objectReference: {fileID: 1436629739}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
